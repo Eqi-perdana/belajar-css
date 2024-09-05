@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+</style>
+</head>
+<body>
+
+<h1>Eqi perdana</h1>
+<img src="img_tree.png">
+<p>Subang jawara.smkn2 subang</p>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3; /* gray box will be above both green and black box */
+  background: rgb(43, 255, 0);
+  height: 60px;  
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2; /* green box will be above black box */
+  background: rgb(3, 124, 238);
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+</style>
+</head>
+<body>
+
+<h1>Eqi perdana</h1>
+
+<p>XI-RPL stempert subang</p>
+
+<div class="container">
+  <div class="black-box">Black box</div>
+  <div class="gray-box">Green box</div>
+  <div class="green-box">Blue box</div>
+</div>
+
+</body>
+</html>
+
+
