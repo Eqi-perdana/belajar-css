@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #ffffff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(0, 153, 255);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #817f7f;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ff0000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #00f7ff;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+} 
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #b9b8b8;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #bbbbbb;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(1, 204, 255);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #0178ff;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Web eqi</h1>
+  <p>Eqi perdana</p>
+</div>
+
+<div class="topnav">
+  <a href="c:\Users\EQI\Documents\css-website layout.html">Home</a>
+  <a href="d:\belajar-css\css-tutorial\css-float.html">Float</a>
+  <a href="c:\Users\EQI\Documents\css-flexbox.html">Flexbox</a>
+  <a href="c:\Users\EQI\Documents\css-grid.html" style="float:right">Grid</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE Eqi</h2>
+      <h5>Title descripsi, 03,september,2024</h5>
+      <img src="c:\Users\EQI\Pictures\Camera Roll\20230625_174710.jpg" alt="Northern Lights" width="400" height="400">
+      <div class="fakeimg" style="height:200px;"><p>Some text..</p>
+        <p>Saya Eqi umur 16 tahun sekolah di smkn 2 subang atau stempert,jurusan rekayasa perangkat lunak</p></div>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 03, 2024</h5>
+      <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240817-WA0018.jpg" alt="Northern Lights" width="350" height="400">
+      <div class="fakeimg" style="height:200px;"><p>Some text..</p>
+        <p>Saya Eqi umur 16 tahun sekolah di smkn 2 subang atau stempert,jurusan rekayasa perangkat lunak</p></div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <audio controls>
+        <source src="c:\Users\EQI\Pictures\Camera Roll\Snaptik.app_7389573041694526725.mp4" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+      <audio controls>
+          <source src="c:\Users\EQI\Pictures\Camera Roll\Snaptik.app_7363611663167261958.mp4" type="audio/ogg">
+          <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="kotak" style="height:100px;"> <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240817-WA0066.jpg" alt="Northern Lights" width="250" height="150"></div>
+      <br>
+      <br>
+      <p>Saya Eqi umur 16 tahun sekolah di smkn 2 subang atau stempert,jurusan rekayasa perangkat lunak</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p><img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240817-WA0075.jpg" alt="Northern Lights" width="220" height="150"></p></div>
+      <div class="fakeimg"><p><img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240818-WA0014.jpg" alt="Northern Lights" width="220" height="150"></p></div>
+      <div class="fakeimg"><p><img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240814-WA0050.jpg" alt="Northern Lights" width="220" height="150"></p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>ig:@eqi.perdana4</p>
+      <div class="topnav">
+        <a href="https://www.youtube.com/">Youtube</a>
+        <a href="https://github.com/Eqi-perdana">Git hub</a>
+        <a href="https://web.whatsapp.com/">whatsapp</a>
+        <a href="https://pathfinder.w3schools.com/">w3schools</a>
+        <a href="https://www.instagram.com/eqi.perdana4/">Instagram</a>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Grid Eqi</h2>
+<p>Eqi perdana</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <p>Saya Eqi umur 16 tahun sekolah di smkn 2 subang atau stempert,jurusan rekayasa perangkat lunak</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <p>Saya Eqi umur 16 tahun sekolah di smkn 2 subang atau stempert,jurusan rekayasa perangkat lunak</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <p>Saya Eqi umur 16 tahun sekolah di smkn 2 subang atau stempert,jurusan rekayasa perangkat lunak</p>
+  </div>
+</div>
+
+<p><strong>komentar:</strong> saya senang sekolah di sini </p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Foto</h2>
+<p>Foto Eqi</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="c:\Users\EQI\Pictures\Camera Roll\20240603_114041.jpg" alt="Italy" style="width:60%">
+  </div>
+  <div class="img-container">
+  <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240805-WA0011.jpg" alt="Forest" style="width:60%">
+  </div>
+  <div class="img-container">
+  <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240720-WA0026.jpg" alt="Mountains" style="width:60%">
+  </div>
+</div>
+
+<p>Saya Eqi umur 16 tahun sekolah di smkn 2 subang atau stempert,jurusan rekayasa perangkat lunak</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Eqi perdana</h1>
+
+<div class="flex-container">
+  <div>E</div>
+  <div>Q</div>
+  <div>I</div> 
+</div>
+
+<p>Eqi perdana</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #ffbb00;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Subang</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+      <li>Subang</li>
+      <li>Tangerang</li>
+      <li>Cirebon</li>
+      <li>Jakarta</li>
+    </ul>
+  </div>
+
+  <div class="col-9">
+    <h1>Subang</h1>
+    <p>Subang jawa barat</p>
+    <p>Stempert subang</p>
+  </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>grid Eqi</h1>
+
+<p>Eqi perdana</em>XI-RPL</p>
+
+<div class="grid-container">
+  <div class="img-container">
+    <img src="c:\Users\EQI\Pictures\Camera Roll\20240603_114041.jpg"  alt="Northern Lights" width="100" height="100">
+    </div>
+    <div class="img-container">
+      <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240817-WA0018.jpg"   alt="Northern Lights" width="100" height="100">
+    </div>
+    <div class="img-container">
+      <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240817-WA0075.jpg"   alt="Northern Lights" width="100" height="100">
+    </div>
+    <div class="img-container">
+      <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240818-WA0014.jpg"   alt="Northern Lights" width="100" height="100">
+    </div>
+    <div class="img-container">
+      <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240814-WA0050.jpg"   alt="Northern Lights" width="100" height="100">
+    </div>
+    <div class="img-container">
+      <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240508-WA0009.jpg"   alt="Northern Lights" width="100" height="100">
+    </div>
+    <div class="img-container">
+      <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240817-WA0032.jpg"   alt="Northern Lights" width="100" height="100">
+    </div>
+    <div class="img-container">
+      <img src="c:\Users\EQI\Pictures\Camera Roll\IMG-20240814-WA0035.jpg"  alt="Northern Lights" width="100" height="100">
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<
